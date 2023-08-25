@@ -1,0 +1,241 @@
+body #wrap > p {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: yellow;
+}
+body #wrap > p > span {
+  position: absolute;
+  top: 45%;
+  right: 0;
+  left: 0;
+  text-align: center;
+  font-size: 30px;
+  display: block;
+}
+@media screen and (max-width:550px) {
+  body #wrap > p {
+    display: none;
+  }
+}
+body #wrap > header {
+  display: none;
+}
+@media screen and (max-width:550px) {
+  body #wrap > header {
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+body #wrap > header > .top > ul {
+  position: relative;
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+}
+body #wrap > header > .top > ul li:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+body #wrap > header > .top > ul li:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 22px;
+}
+body #wrap > header > .top > ul li:nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 52px;
+}
+body #wrap > header > .top > ul li:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+body #wrap > header > .top > ul li:nth-child(5) {
+  position: absolute;
+  right: 23px;
+  top: 0;
+}
+body #wrap > header > .top > ul li:nth-child(6) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+body #wrap > header > .friend {
+  padding: 0 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 80px;
+  line-height: 80px;
+}
+body #wrap > header > .friend > h1 {
+  font-weight: 500;
+}
+body #wrap > header > .friend > .right {
+  display: flex;
+  flex-flow: row nowrap;
+}
+body #wrap > header > .friend > .right > p {
+  font-size: 25px;
+}
+body #wrap > header > .friend > .right > p:first-child {
+  margin-right: 15px;
+}
+body #wrap > header > .friend > .right > p:nth-child(2) > a:hover {
+  color: red;
+}
+body #wrap > section {
+  display: none;
+}
+@media screen and (max-width:550px) {
+  body #wrap > section {
+    display: block;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+}
+body #wrap > section > .me {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+body #wrap > section > .me > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+}
+body #wrap > section > .me > h2 {
+  margin-left: 20px;
+  line-height: 23px;
+  font-weight: 500;
+}
+body #wrap > section > .me > h2 > span {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+}
+body #wrap > section > .birth {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+body #wrap > section > .birth > h2 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+body #wrap > section > .birth > p {
+  font-size: 16px;
+  font-weight: 500;
+}
+body #wrap > section > .birth > p > img {
+  width: 60px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+body #wrap > section > .plus {
+  padding-top: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+body #wrap > section > .plus h2 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+body #wrap > section > .plus > p {
+  font-size: 16px;
+  font-weight: 500;
+}
+body #wrap > section > .plus > p > img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+body #wrap > section > .favorites {
+  padding-top: 25px;
+}
+body #wrap > section > .favorites > h2 {
+  font-size: 13px;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+body #wrap > section > .favorites > ul > li {
+  position: relative;
+  margin-bottom: 20px;
+}
+body #wrap > section > .favorites > ul > li > a > img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+body #wrap > section > .favorites > ul > li > a > .name {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+}
+body #wrap > section > .favorites > ul > li > a > .text {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+  color: #888;
+  font-size: 14px;
+}
+body #wrap > section > .favorites > ul > li > a > .date {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  color: #888;
+}
+body #wrap > section > .favorites > ul > li:hover {
+  background-color: lightgoldenrodyellow;
+}
+body #wrap > footer {
+  display: none;
+}
+@media screen and (max-width:550px) {
+  body #wrap > footer {
+    display: block;
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+body #wrap > footer > nav > ol {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 25px;
+  line-height: 70px;
+  background-color: #eee;
+}
+body #wrap > footer > nav > ol > li:hover {
+  display: block;
+}
+body #wrap > footer > nav > ol > li > a {
+  height: 70px;
+}
+body #wrap > footer > nav > ol > li:hover > a {
+  color: palevioletred;
+}/*# sourceMappingURL=style.css.map */
