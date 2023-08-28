@@ -1,3 +1,7 @@
+body #wrap {
+  width: 450px;
+  height: 850px;
+}
 body #wrap > p {
   position: fixed;
   top: 0;
@@ -68,7 +72,7 @@ body #wrap > header > .top > ul li:nth-child(6) {
   top: 0;
 }
 body #wrap > header > .friend {
-  padding: 0 20px;
+  padding-left: 20px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -208,6 +212,21 @@ body #wrap > section > .favorites > ul > li > a > .date {
 body #wrap > section > .favorites > ul > li:hover {
   background-color: lightgoldenrodyellow;
 }
+body #wrap > section > .favorites > ul > li > a > .one {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 10px;
+}
 body #wrap > footer {
   display: none;
 }
@@ -215,27 +234,58 @@ body #wrap > footer {
   body #wrap > footer {
     display: block;
     width: 100%;
-    margin: 0 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
   }
+}
+@keyframes aninav {
+  0% {
+    transform: translate(0, 70px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+body #wrap > footer > nav {
+  animation: aninav 0.8s ease-out forwards 0.8s;
 }
 body #wrap > footer > nav > ol {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   font-size: 25px;
   line-height: 70px;
   background-color: #eee;
-}
-body #wrap > footer > nav > ol > li:hover {
-  display: block;
 }
 body #wrap > footer > nav > ol > li > a {
   height: 70px;
 }
 body #wrap > footer > nav > ol > li:hover > a {
   color: palevioletred;
+}
+body #wrap > footer > nav > ol > li:nth-child(2) {
+  position: relative;
+}
+@keyframes anione {
+  0% {
+    transform: translate(0, 5px);
+  }
+}
+body #wrap > footer > nav > ol > li:nth-child(2) > a > span.one {
+  position: absolute;
+  left: 8px;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 10px;
+  animation: anione 0.5s ease-in-out infinite alternate forwards;
 }/*# sourceMappingURL=style.css.map */

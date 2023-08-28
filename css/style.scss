@@ -2,6 +2,8 @@ $mobile: 'screen and (max-width:550px)';
 
 body {
 	#wrap {
+		width: 450px;
+		height: 850px;
 		> p {
 			position: fixed;
 			top: 0;
@@ -24,24 +26,21 @@ body {
 				display: none;
 			}
 		}
-
 		> header {
 			display: none;
 			@media #{$mobile} {
 				display: block;
 				width: 100%;
 				margin: 0 10px;
-				// background-color: #fff;
 			}
 
 			> .top {
 				> ul {
 					position: relative;
 					height: 40px;
-					// margin-top: 10px;
 					font-size: 15px;
 					line-height: 40px;
-					// border: 1px solid #000;
+
 					li {
 						&:nth-child(1) {
 							position: absolute;
@@ -80,7 +79,7 @@ body {
 			} //end of .top
 
 			> .friend {
-				padding: 0 20px;
+				padding-left: 20px;
 				display: flex;
 				flex-flow: row nowrap;
 				justify-content: space-between;
@@ -235,6 +234,21 @@ body {
 						&:hover {
 							background-color: lightgoldenrodyellow;
 						}
+						& > a > .one {
+							position: absolute;
+							right: 0;
+							bottom: 4px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							width: 18px;
+							height: 18px;
+							color: #fff;
+							font-size: 12px;
+							font-weight: 500;
+							background-color: red;
+							border-radius: 10px;
+						}
 					} //end of li
 				} // end of ul
 			} //end of .favorites
@@ -245,37 +259,66 @@ body {
 			@media #{$mobile} {
 				display: block;
 				width: 100%;
-				margin: 0 10px;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				right: 0;
 			}
-
+			@keyframes aninav {
+				0% {
+					transform: translate(0, 70px);
+				}
+				100% {
+					transform: translate(0, 0);
+				}
+			}
 			> nav {
+				animation: aninav 0.8s ease-out forwards 0.8s;
 				> ol {
 					display: flex;
 					flex-flow: row nowrap;
 					justify-content: space-around;
-					position: fixed;
-					bottom: 0;
-					left: 0;
-					right: 0;
 					font-size: 25px;
 					line-height: 70px;
 					background-color: #eee;
 					> li {
-						// display: none;
-
-						&:hover {
-							display: block;
-						}
-
 						> a {
 							height: 70px;
 						}
+
 						&:hover > a {
 							color: palevioletred;
 						}
+
+						&:nth-child(2) {
+							position: relative;
+							> a {
+								@keyframes anione {
+									0% {
+										transform: translate(0, 5px);
+									}
+								}
+								> span.one {
+									position: absolute;
+									left: 8px;
+									top: 15px;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									width: 18px;
+									height: 18px;
+									color: #fff;
+									font-size: 12px;
+									font-weight: 500;
+									background-color: red;
+									border-radius: 10px;
+									animation: anione 0.5s ease-in-out infinite alternate forwards;
+								}
+							}
+						}
 					}
 				}
-			}
+			} //end of nav
 		} //end of footer
 	} //end of #wrap
 }
