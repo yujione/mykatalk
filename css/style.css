@@ -1,77 +1,76 @@
-body #wrap {
-  width: 450px;
-  height: 850px;
-}
-body #wrap > p {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: yellow;
-}
-body #wrap > p > span {
-  position: absolute;
-  top: 45%;
-  right: 0;
-  left: 0;
-  text-align: center;
-  font-size: 30px;
+@charset "UTF-8";
+body:after {
   display: block;
+  height: 100vh;
+  color: #222;
+  font-size: 32px;
+  line-height: 100vh;
+  text-align: center;
+  background-color: #ff0;
+  content: "브라우저의 가로폭을 550이하로 줄여주세요";
 }
 @media screen and (max-width:550px) {
-  body #wrap > p {
+  body:after {
     display: none;
   }
 }
-body #wrap > header {
+body > #pc {
   display: none;
 }
 @media screen and (max-width:550px) {
-  body #wrap > header {
+  body > #pc {
     display: block;
     width: 100%;
-    margin: 0 10px;
+    height: 100%;
   }
 }
-body #wrap > header > .top > ul {
+body > #pc > #wrap {
+  width: 450px;
+  height: 850px;
+}
+body > #pc > #wrap > header {
+  display: block;
+  width: 100%;
+  margin: 0 10px;
+}
+body > #pc > #wrap > header > .top > ul {
   position: relative;
   height: 40px;
   font-size: 15px;
   line-height: 40px;
 }
-body #wrap > header > .top > ul li:nth-child(1) {
+body > #pc > #wrap > header > .top > ul li:nth-child(1) {
   position: absolute;
   top: 0;
   left: 0;
 }
-body #wrap > header > .top > ul li:nth-child(2) {
+body > #pc > #wrap > header > .top > ul li:nth-child(2) {
   position: absolute;
   top: 0;
   left: 22px;
 }
-body #wrap > header > .top > ul li:nth-child(3) {
+body > #pc > #wrap > header > .top > ul li:nth-child(3) {
   position: absolute;
   top: 0;
   left: 52px;
 }
-body #wrap > header > .top > ul li:nth-child(4) {
+body > #pc > #wrap > header > .top > ul li:nth-child(4) {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0);
 }
-body #wrap > header > .top > ul li:nth-child(5) {
+body > #pc > #wrap > header > .top > ul li:nth-child(5) {
   position: absolute;
   right: 23px;
   top: 0;
 }
-body #wrap > header > .top > ul li:nth-child(6) {
+body > #pc > #wrap > header > .top > ul li:nth-child(6) {
   position: absolute;
   right: 0;
   top: 0;
 }
-body #wrap > header > .friend {
+body > #pc > #wrap > header > .friend {
   padding-left: 20px;
   display: flex;
   flex-flow: row nowrap;
@@ -79,23 +78,23 @@ body #wrap > header > .friend {
   height: 80px;
   line-height: 80px;
 }
-body #wrap > header > .friend > h1 {
+body > #pc > #wrap > header > .friend > h1 {
   font-weight: 500;
 }
-body #wrap > header > .friend > .right {
+body > #pc > #wrap > header > .friend > .right {
   display: flex;
   flex-flow: row nowrap;
 }
-body #wrap > header > .friend > .right > p {
+body > #pc > #wrap > header > .friend > .right > p {
   font-size: 25px;
 }
-body #wrap > header > .friend > .right > p:first-child {
+body > #pc > #wrap > header > .friend > .right > p:first-child {
   margin-right: 20px;
 }
-body #wrap > header > .friend > .right > p:nth-child(2) > a:hover {
+body > #pc > #wrap > header > .friend > .right > p:nth-child(2) > a:hover {
   color: red;
 }
-body #wrap > header > .chatting {
+body > #pc > #wrap > header > .chatting {
   padding-left: 20px;
   display: flex;
   flex-flow: row nowrap;
@@ -103,129 +102,124 @@ body #wrap > header > .chatting {
   height: 80px;
   line-height: 80px;
 }
-body #wrap > header > .chatting > h1 {
+body > #pc > #wrap > header > .chatting > h1 {
   font-weight: 500;
 }
-body #wrap > header > .chatting > h2 {
+body > #pc > #wrap > header > .chatting > h2 {
   text-indent: -110px;
   color: #ccc;
   font-size: 2em;
   font-weight: 500;
 }
-body #wrap > header > .chatting > .right {
+body > #pc > #wrap > header > .chatting > .right {
   display: flex;
   flex-flow: row nowrap;
 }
-body #wrap > header > .chatting > .right > p {
+body > #pc > #wrap > header > .chatting > .right > p {
   font-size: 25px;
 }
-body #wrap > header > .chatting > .right > p:first-child {
+body > #pc > #wrap > header > .chatting > .right > p:first-child {
   margin-right: 20px;
 }
-body #wrap > header > .chatting > .right > p:nth-child(2) {
+body > #pc > #wrap > header > .chatting > .right > p:nth-child(2) {
   margin-right: 20px;
 }
-body #wrap > header > .chatting > .right > p:last-child > a:hover {
+body > #pc > #wrap > header > .chatting > .right > p:last-child > a:hover {
   color: red;
 }
-body #wrap > section {
-  display: none;
+body > #pc > #wrap > section {
+  display: block;
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 40px;
 }
-@media screen and (max-width:550px) {
-  body #wrap > section {
-    display: block;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 40px;
-  }
-}
-body #wrap > section > .me {
+body > #pc > #wrap > section > .me {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   padding: 10px 0;
   border-bottom: 1px solid #ccc;
 }
-body #wrap > section > .me > img {
+body > #pc > #wrap > section > .me > img {
   width: 80px;
   height: 80px;
   border-radius: 30px;
 }
-body #wrap > section > .me > h2 {
+body > #pc > #wrap > section > .me > h2 {
   margin-left: 20px;
   line-height: 23px;
   font-weight: 500;
 }
-body #wrap > section > .me > h2 > span {
+body > #pc > #wrap > section > .me > h2 > span {
   display: block;
   font-size: 13px;
   font-weight: 500;
 }
-body #wrap > section > .birth {
+body > #pc > #wrap > section > .birth {
   padding-top: 25px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-body #wrap > section > .birth > h2 {
+body > #pc > #wrap > section > .birth > h2 {
   font-size: 13px;
   font-weight: 400;
   padding-bottom: 10px;
 }
-body #wrap > section > .birth > p {
+body > #pc > #wrap > section > .birth > p {
   font-size: 16px;
   font-weight: 500;
 }
-body #wrap > section > .birth > p > img {
+body > #pc > #wrap > section > .birth > p > img {
   width: 60px;
   vertical-align: middle;
   margin-right: 10px;
   border-radius: 20px;
 }
-body #wrap > section > .plus {
+body > #pc > #wrap > section > .plus {
   padding-top: 25px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
-body #wrap > section > .plus h2 {
+body > #pc > #wrap > section > .plus h2 {
   font-size: 13px;
   font-weight: 400;
   padding-bottom: 10px;
 }
-body #wrap > section > .plus > p {
+body > #pc > #wrap > section > .plus > p {
   font-size: 16px;
   font-weight: 500;
 }
-body #wrap > section > .plus > p > img {
+body > #pc > #wrap > section > .plus > p > img {
   width: 60px;
   height: 60px;
   vertical-align: middle;
   margin-right: 10px;
   border-radius: 20px;
 }
-body #wrap > section > .favorites {
+body > #pc > #wrap > section > .favorites {
   padding-top: 25px;
 }
-body #wrap > section > .favorites > h2 {
+body > #pc > #wrap > section > .favorites > h2 {
   font-size: 13px;
   font-weight: 400;
   padding-bottom: 10px;
 }
-body #wrap > section > .favorites > ul > li {
+body > #pc > #wrap > section > .favorites > ul > li {
   position: relative;
   margin-bottom: 20px;
 }
-body #wrap > section > .favorites > ul > li > a {
+body > #pc > #wrap > section > .favorites > ul > li > a {
   display: block;
   width: 450px;
   height: 60px;
 }
-body #wrap > section > .favorites > ul > li > a > img {
+body > #pc > #wrap > section > .favorites > ul > li > a > img {
   width: 60px;
   height: 60px;
   vertical-align: middle;
   border-radius: 20px;
 }
-body #wrap > section > .favorites > ul > li > a > .name {
+body > #pc > #wrap > section > .favorites > ul > li > a > .name {
   position: absolute;
   top: 10px;
   left: 50px;
@@ -234,23 +228,23 @@ body #wrap > section > .favorites > ul > li > a > .name {
   line-height: 23px;
   font-weight: 500;
 }
-body #wrap > section > .favorites > ul > li > a > .text {
+body > #pc > #wrap > section > .favorites > ul > li > a > .text {
   position: absolute;
   top: 35px;
   left: 70px;
   color: #888;
   font-size: 14px;
 }
-body #wrap > section > .favorites > ul > li > a > .date {
+body > #pc > #wrap > section > .favorites > ul > li > a > .date {
   position: absolute;
   top: 15px;
   right: 0;
   color: #888;
 }
-body #wrap > section > .favorites > ul > li:hover {
+body > #pc > #wrap > section > .favorites > ul > li:hover {
   background-color: lightgoldenrodyellow;
 }
-body #wrap > section > .favorites > ul > li > a > .one {
+body > #pc > #wrap > section > .favorites > ul > li > a > .one {
   position: absolute;
   right: 0;
   bottom: 4px;
@@ -265,28 +259,28 @@ body #wrap > section > .favorites > ul > li > a > .one {
   background-color: red;
   border-radius: 10px;
 }
-body #wrap > section > .chatSection {
+body > #pc > #wrap > section > .chatSection {
   padding-top: -50px;
 }
-body #wrap > section > .chatSection > h2 {
+body > #pc > #wrap > section > .chatSection > h2 {
   text-indent: -9999px;
 }
-body #wrap > section > .chatSection > ul > li {
+body > #pc > #wrap > section > .chatSection > ul > li {
   position: relative;
   margin-bottom: 20px;
 }
-body #wrap > section > .chatSection > ul > li > a {
+body > #pc > #wrap > section > .chatSection > ul > li > a {
   display: block;
   width: 450px;
   height: 60px;
 }
-body #wrap > section > .chatSection > ul > li > a > img {
+body > #pc > #wrap > section > .chatSection > ul > li > a > img {
   width: 60px;
   height: 60px;
   vertical-align: middle;
   border-radius: 20px;
 }
-body #wrap > section > .chatSection > ul > li > a > .name {
+body > #pc > #wrap > section > .chatSection > ul > li > a > .name {
   position: absolute;
   top: 10px;
   left: 50px;
@@ -295,23 +289,23 @@ body #wrap > section > .chatSection > ul > li > a > .name {
   line-height: 23px;
   font-weight: 500;
 }
-body #wrap > section > .chatSection > ul > li > a > .text {
+body > #pc > #wrap > section > .chatSection > ul > li > a > .text {
   position: absolute;
   top: 35px;
   left: 70px;
   color: #888;
   font-size: 14px;
 }
-body #wrap > section > .chatSection > ul > li > a > .date {
+body > #pc > #wrap > section > .chatSection > ul > li > a > .date {
   position: absolute;
   top: 15px;
   right: 0;
   color: #888;
 }
-body #wrap > section > .chatSection > ul > li:hover {
+body > #pc > #wrap > section > .chatSection > ul > li:hover {
   background-color: lightgoldenrodyellow;
 }
-body #wrap > section > .chatSection > ul > li > a > .one {
+body > #pc > #wrap > section > .chatSection > ul > li > a > .one {
   position: absolute;
   right: 0;
   bottom: 6px;
@@ -326,18 +320,30 @@ body #wrap > section > .chatSection > ul > li > a > .one {
   background-color: red;
   border-radius: 10px;
 }
-body #wrap > footer {
-  display: none;
+body > #pc > #wrap > section > .chatSection > ul > li:nth-child(2) {
+  display: flex;
 }
-@media screen and (max-width:550px) {
-  body #wrap > footer {
-    display: block;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
+body > #pc > #wrap > section > .chatSection > ul > li:nth-child(2) > a > .img {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+body > #pc > #wrap > section > .chatSection > ul > li:nth-child(2) > a > .img img {
+  border-radius: 10px;
+  width: 28px;
+  height: 28px;
+}
+body > #pc > #wrap > footer {
+  display: block;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 @keyframes aninav {
   0% {
@@ -347,10 +353,10 @@ body #wrap > footer {
     transform: translate(0, 0);
   }
 }
-body #wrap > footer > nav {
+body > #pc > #wrap > footer > nav {
   animation: aninav 0.8s ease-out forwards 0.8s;
 }
-body #wrap > footer > nav > ol {
+body > #pc > #wrap > footer > nav > ol {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
@@ -359,13 +365,13 @@ body #wrap > footer > nav > ol {
   background-color: #eee;
   border-top: 1px solid #ccc;
 }
-body #wrap > footer > nav > ol > li > a {
+body > #pc > #wrap > footer > nav > ol > li > a {
   height: 70px;
 }
-body #wrap > footer > nav > ol > li:hover > a {
+body > #pc > #wrap > footer > nav > ol > li:hover > a {
   color: palevioletred;
 }
-body #wrap > footer > nav > ol > li:nth-child(2) {
+body > #pc > #wrap > footer > nav > ol > li:nth-child(2) {
   position: relative;
 }
 @keyframes anione {
@@ -373,7 +379,7 @@ body #wrap > footer > nav > ol > li:nth-child(2) {
     transform: translate(0, 5px);
   }
 }
-body #wrap > footer > nav > ol > li:nth-child(2) > a > span.one {
+body > #pc > #wrap > footer > nav > ol > li:nth-child(2) > a > span.one {
   position: absolute;
   left: 8px;
   top: 15px;

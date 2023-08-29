@@ -1,430 +1,453 @@
 $mobile: 'screen and (max-width:550px)';
 
 body {
-	#wrap {
-		width: 450px;
-		height: 850px;
-		> p {
-			position: fixed;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-color: yellow;
-
-			> span {
-				position: absolute;
-				top: 45%;
-				right: 0;
-				left: 0;
-				text-align: center;
-				font-size: 30px;
-				display: block;
-			}
-
-			@media #{$mobile} {
-				display: none;
-			}
-		}
-		> header {
+	&:after {
+		display: block;
+		height: 100vh;
+		color: #222;
+		font-size: 32px;
+		line-height: 100vh;
+		text-align: center;
+		background-color: #ff0;
+		content: '브라우저의 가로폭을 550이하로 줄여주세요';
+		@media #{$mobile} {
 			display: none;
-			@media #{$mobile} {
+		}
+	}
+	> #pc {
+		display: none;
+		@media #{$mobile} {
+			display: block;
+			width: 100%;
+			height: 100%;
+			// overflow-x: hidden;
+		}
+
+		> #wrap {
+			width: 450px;
+			height: 850px;
+			> header {
 				display: block;
 				width: 100%;
 				margin: 0 10px;
-			}
 
-			> .top {
-				> ul {
-					position: relative;
-					height: 40px;
-					font-size: 15px;
-					line-height: 40px;
+				> .top {
+					> ul {
+						position: relative;
+						height: 40px;
+						font-size: 15px;
+						line-height: 40px;
 
-					li {
-						&:nth-child(1) {
-							position: absolute;
-							top: 0;
-							left: 0;
-						}
-						&:nth-child(2) {
-							position: absolute;
-							top: 0;
-							left: 22px;
-						}
-						&:nth-child(3) {
-							position: absolute;
-							top: 0;
-							left: 52px;
-						}
+						li {
+							&:nth-child(1) {
+								position: absolute;
+								top: 0;
+								left: 0;
+							}
+							&:nth-child(2) {
+								position: absolute;
+								top: 0;
+								left: 22px;
+							}
+							&:nth-child(3) {
+								position: absolute;
+								top: 0;
+								left: 52px;
+							}
 
-						&:nth-child(4) {
-							position: absolute;
-							top: 0;
-							left: 50%;
-							transform: translate(-50%, 0);
-						}
-						&:nth-child(5) {
-							position: absolute;
-							right: 23px;
-							top: 0;
-						}
-						&:nth-child(6) {
-							position: absolute;
-							right: 0;
-							top: 0;
+							&:nth-child(4) {
+								position: absolute;
+								top: 0;
+								left: 50%;
+								transform: translate(-50%, 0);
+							}
+							&:nth-child(5) {
+								position: absolute;
+								right: 23px;
+								top: 0;
+							}
+							&:nth-child(6) {
+								position: absolute;
+								right: 0;
+								top: 0;
+							}
 						}
 					}
-				}
-			} //end of .top
+				} //end of .top
 
-			> .friend {
-				padding-left: 20px;
-				display: flex;
-				flex-flow: row nowrap;
-				justify-content: space-between;
-				height: 80px;
-				line-height: 80px;
-				// border: 1px solid #000;
-				> h1 {
-					font-weight: 500;
-				}
-				> .right {
+				> .friend {
+					padding-left: 20px;
 					display: flex;
 					flex-flow: row nowrap;
-					> p {
-						font-size: 25px;
+					justify-content: space-between;
+					height: 80px;
+					line-height: 80px;
+					// border: 1px solid #000;
+					> h1 {
+						font-weight: 500;
+					}
+					> .right {
+						display: flex;
+						flex-flow: row nowrap;
+						> p {
+							font-size: 25px;
 
-						&:first-child {
-							margin-right: 20px;
-						}
-						&:nth-child(2) > a:hover {
-							color: red;
+							&:first-child {
+								margin-right: 20px;
+							}
+							&:nth-child(2) > a:hover {
+								color: red;
+							}
 						}
 					}
-				}
-			} //end of .friend (index)
 
-			> .chatting {
-				padding-left: 20px;
-				display: flex;
-				flex-flow: row nowrap;
-				justify-content: space-between;
-				height: 80px;
-				line-height: 80px;
-				// border: 1px solid #000;
-				> h1 {
-					font-weight: 500;
-				}
-				> h2 {
-					text-indent: -110px;
-					color: #ccc;
-					font-size: 2em;
-					font-weight: 500;
-				}
-				> .right {
+					// > div {
+					// 	position: relative;
+					// 	> .findlist {
+					// 		position: absolute;
+					// 		top: 0;
+					// 		left: 0;
+					// 	}
+					// }
+				} //end of .friend
+
+				> .chatting {
+					padding-left: 20px;
 					display: flex;
 					flex-flow: row nowrap;
-					> p {
-						font-size: 25px;
+					justify-content: space-between;
+					height: 80px;
+					line-height: 80px;
+					// border: 1px solid #000;
+					> h1 {
+						font-weight: 500;
+					}
+					> h2 {
+						text-indent: -110px;
+						color: #ccc;
+						font-size: 2em;
+						font-weight: 500;
+					}
+					> .right {
+						display: flex;
+						flex-flow: row nowrap;
+						> p {
+							font-size: 25px;
 
-						&:first-child {
-							margin-right: 20px;
-						}
-						&:nth-child(2) {
-							margin-right: 20px;
-						}
-						&:last-child > a:hover {
-							color: red;
+							&:first-child {
+								margin-right: 20px;
+							}
+							&:nth-child(2) {
+								margin-right: 20px;
+							}
+							&:last-child > a:hover {
+								color: red;
+							}
 						}
 					}
-				}
-			} //end of .chatting (chatting)
-		} //end header
+				} //end of .chatting (chatting.html)
+			} //end header
 
-		> section {
-			display: none;
-			@media #{$mobile} {
+			> section {
 				display: block;
 				width: 100%;
 				margin-left: 20px;
 				margin-right: 40px;
-			}
 
-			> .me {
-				display: flex;
-				flex-flow: row nowrap;
-				align-items: center;
-				padding: 10px 0;
+				> .me {
+					display: flex;
+					flex-flow: row nowrap;
+					align-items: center;
+					padding: 10px 0;
 
-				border-bottom: 1px solid #ccc;
-				> img {
-					width: 80px;
-					height: 80px;
-					border-radius: 30px;
-				}
-				> h2 {
-					margin-left: 20px;
-					line-height: 23px;
-					font-weight: 500;
-					> span {
-						display: block;
-						font-size: 13px;
+					border-bottom: 1px solid #ccc;
+					> img {
+						width: 80px;
+						height: 80px;
+						border-radius: 30px;
+					}
+					> h2 {
+						margin-left: 20px;
+						line-height: 23px;
 						font-weight: 500;
-					}
-				}
-			} // end of .me
-
-			> .birth {
-				padding-top: 25px;
-				padding-bottom: 10px;
-				border-bottom: 1px solid #ccc;
-				> h2 {
-					font-size: 13px;
-					font-weight: 400;
-					padding-bottom: 10px;
-				}
-				> p {
-					font-size: 16px;
-					font-weight: 500;
-
-					> img {
-						width: 60px;
-						vertical-align: middle;
-						margin-right: 10px;
-						border-radius: 20px;
-					}
-				}
-			} //end of .birth
-
-			> .plus {
-				padding-top: 25px;
-				padding-bottom: 10px;
-				border-bottom: 1px solid #ccc;
-
-				h2 {
-					font-size: 13px;
-					font-weight: 400;
-					padding-bottom: 10px;
-				}
-				> p {
-					font-size: 16px;
-					font-weight: 500;
-
-					> img {
-						width: 60px;
-						height: 60px;
-						vertical-align: middle;
-						margin-right: 10px;
-						border-radius: 20px;
-					}
-				}
-			} //end of .plus
-
-			> .favorites {
-				padding-top: 25px;
-				> h2 {
-					font-size: 13px;
-					font-weight: 400;
-					padding-bottom: 10px;
-				}
-
-				> ul {
-					> li {
-						position: relative;
-						margin-bottom: 20px;
-						> a {
+						> span {
 							display: block;
-							width: 450px;
-							height: 60px;
-							> img {
-								width: 60px;
-								height: 60px;
-								vertical-align: middle;
-								border-radius: 20px;
-							}
-
-							> .name {
-								position: absolute;
-								top: 10px;
-								left: 50px;
-
-								margin-left: 20px;
-								font-size: 20px;
-								line-height: 23px;
-								font-weight: 500;
-							}
-							> .text {
-								position: absolute;
-								top: 35px;
-								left: 70px;
-								color: #888;
-								font-size: 14px;
-							}
-							> .date {
-								position: absolute;
-								top: 15px;
-								right: 0;
-								color: #888;
-							}
-						}
-						&:hover {
-							background-color: lightgoldenrodyellow;
-						}
-						& > a > .one {
-							position: absolute;
-							right: 0;
-							bottom: 4px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							width: 18px;
-							height: 18px;
-							color: #fff;
-							font-size: 12px;
+							font-size: 13px;
 							font-weight: 500;
-							background-color: red;
-							border-radius: 10px;
 						}
-					} //end of li
-				} // end of ul
-			} //end of .favorites (index)
+					}
+				} // end of .me
 
-			> .chatSection {
-				padding-top: -50px;
-				> h2 {
-					text-indent: -9999px;
-				}
+				> .birth {
+					padding-top: 25px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #ccc;
+					> h2 {
+						font-size: 13px;
+						font-weight: 400;
+						padding-bottom: 10px;
+					}
+					> p {
+						font-size: 16px;
+						font-weight: 500;
 
-				> ul {
-					> li {
-						position: relative;
-						margin-bottom: 20px;
-						> a {
-							display: block;
-							width: 450px;
+						> img {
+							width: 60px;
+							vertical-align: middle;
+							margin-right: 10px;
+							border-radius: 20px;
+						}
+					}
+				} //end of .birth
+
+				> .plus {
+					padding-top: 25px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #ccc;
+
+					h2 {
+						font-size: 13px;
+						font-weight: 400;
+						padding-bottom: 10px;
+					}
+					> p {
+						font-size: 16px;
+						font-weight: 500;
+
+						> img {
+							width: 60px;
 							height: 60px;
+							vertical-align: middle;
+							margin-right: 10px;
+							border-radius: 20px;
+						}
+					}
+				} //end of .plus
 
-							> img {
-								width: 60px;
+				> .favorites {
+					padding-top: 25px;
+					> h2 {
+						font-size: 13px;
+						font-weight: 400;
+						padding-bottom: 10px;
+					}
+
+					> ul {
+						> li {
+							position: relative;
+							margin-bottom: 20px;
+							> a {
+								display: block;
+								width: 450px;
 								height: 60px;
-								vertical-align: middle;
-								border-radius: 20px;
-							}
+								> img {
+									width: 60px;
+									height: 60px;
+									vertical-align: middle;
+									border-radius: 20px;
+								}
 
-							> .name {
-								position: absolute;
-								top: 10px;
-								left: 50px;
+								> .name {
+									position: absolute;
+									top: 10px;
+									left: 50px;
 
-								margin-left: 20px;
-								font-size: 20px;
-								line-height: 23px;
-								font-weight: 500;
+									margin-left: 20px;
+									font-size: 20px;
+									line-height: 23px;
+									font-weight: 500;
+								}
+								> .text {
+									position: absolute;
+									top: 35px;
+									left: 70px;
+									color: #888;
+									font-size: 14px;
+								}
+								> .date {
+									position: absolute;
+									top: 15px;
+									right: 0;
+									color: #888;
+								}
 							}
-							> .text {
-								position: absolute;
-								top: 35px;
-								left: 70px;
-								color: #888;
-								font-size: 14px;
+							&:hover {
+								background-color: lightgoldenrodyellow;
 							}
-							> .date {
+							& > a > .one {
 								position: absolute;
-								top: 15px;
 								right: 0;
-								color: #888;
+								bottom: 4px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								width: 18px;
+								height: 18px;
+								color: #fff;
+								font-size: 12px;
+								font-weight: 500;
+								background-color: red;
+								border-radius: 10px;
 							}
-						}
-						&:hover {
-							background-color: lightgoldenrodyellow;
-						}
-						& > a > .one {
-							position: absolute;
-							right: 0;
-							bottom: 6px;
-							display: flex;
-							align-items: center;
-							justify-content: center;
-							width: 18px;
-							height: 18px;
-							color: #fff;
-							font-size: 12px;
-							font-weight: 500;
-							background-color: red;
-							border-radius: 10px;
-						}
-					} //end of li
-				} // end of ul
-			} //end of .chatSection (chatting)
-		} //end of section
+						} //end of li
+					} // end of ul
+				} //end of .favorites (index)
 
-		> footer {
-			display: none;
-			@media #{$mobile} {
+				> .chatSection {
+					padding-top: -50px;
+					> h2 {
+						text-indent: -9999px;
+					}
+
+					> ul {
+						> li {
+							position: relative;
+							margin-bottom: 20px;
+							> a {
+								display: block;
+								width: 450px;
+								height: 60px;
+
+								> img {
+									width: 60px;
+									height: 60px;
+									vertical-align: middle;
+									border-radius: 20px;
+								}
+
+								> .name {
+									position: absolute;
+									top: 10px;
+									left: 50px;
+
+									margin-left: 20px;
+									font-size: 20px;
+									line-height: 23px;
+									font-weight: 500;
+								}
+								> .text {
+									position: absolute;
+									top: 35px;
+									left: 70px;
+									color: #888;
+									font-size: 14px;
+								}
+								> .date {
+									position: absolute;
+									top: 15px;
+									right: 0;
+									color: #888;
+								}
+							}
+							&:hover {
+								background-color: lightgoldenrodyellow;
+							}
+							& > a > .one {
+								position: absolute;
+								right: 0;
+								bottom: 6px;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								width: 18px;
+								height: 18px;
+								color: #fff;
+								font-size: 12px;
+								font-weight: 500;
+								background-color: red;
+								border-radius: 10px;
+							}
+							&:nth-child(2) {
+								display: flex;
+								// border: 1px solid #000;
+								> a {
+									> .img {
+										display: flex;
+										flex-direction: row;
+										flex-wrap: wrap;
+										justify-content: space-around;
+										align-items: center;
+										width: 60px;
+										height: 60px;
+										// border: 1px solid #000;
+										img {
+											border-radius: 10px;
+											width: 28px;
+											height: 28px;
+										}
+									}
+								}
+							}
+						} //end of li
+					} // end of ul
+				} //end of .chatSection (chatting)
+			} //end of section
+
+			> footer {
 				display: block;
 				width: 100%;
 				position: fixed;
 				bottom: 0;
 				left: 0;
 				right: 0;
-			}
-			@keyframes aninav {
-				0% {
-					transform: translate(0, 70px);
-				}
-				100% {
-					transform: translate(0, 0);
-				}
-			}
-			> nav {
-				animation: aninav 0.8s ease-out forwards 0.8s;
-				> ol {
-					display: flex;
-					flex-flow: row nowrap;
-					justify-content: space-around;
-					font-size: 25px;
-					line-height: 70px;
-					background-color: #eee;
-					border-top: 1px solid #ccc;
-					> li {
-						> a {
-							height: 70px;
-						}
 
-						&:hover > a {
-							color: palevioletred;
-						}
-
-						&:nth-child(2) {
-							position: relative;
+				@keyframes aninav {
+					0% {
+						transform: translate(0, 70px);
+					}
+					100% {
+						transform: translate(0, 0);
+					}
+				}
+				> nav {
+					animation: aninav 0.8s ease-out forwards 0.8s;
+					> ol {
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-around;
+						font-size: 25px;
+						line-height: 70px;
+						background-color: #eee;
+						border-top: 1px solid #ccc;
+						> li {
 							> a {
-								@keyframes anione {
-									0% {
-										transform: translate(0, 5px);
+								height: 70px;
+							}
+
+							&:hover > a {
+								color: palevioletred;
+							}
+
+							&:nth-child(2) {
+								position: relative;
+								> a {
+									@keyframes anione {
+										0% {
+											transform: translate(0, 5px);
+										}
 									}
-								}
-								> span.one {
-									position: absolute;
-									left: 8px;
-									top: 15px;
-									display: flex;
-									align-items: center;
-									justify-content: center;
-									width: 18px;
-									height: 18px;
-									color: #fff;
-									font-size: 12px;
-									font-weight: 500;
-									background-color: red;
-									border-radius: 10px;
-									animation: anione 0.5s ease-in-out infinite alternate forwards;
+									> span.one {
+										position: absolute;
+										left: 8px;
+										top: 15px;
+										display: flex;
+										align-items: center;
+										justify-content: center;
+										width: 18px;
+										height: 18px;
+										color: #fff;
+										font-size: 12px;
+										font-weight: 500;
+										background-color: red;
+										border-radius: 10px;
+										animation: anione 0.5s ease-in-out infinite alternate forwards;
+									}
 								}
 							}
 						}
 					}
-				}
-			} //end of nav
-		} //end of footer
-	} //end of #wrap
+				} //end of nav
+			} //end of footer
+		} //end of #wrap
+	} //end of #pc
 }
