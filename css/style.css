@@ -90,9 +90,42 @@ body #wrap > header > .friend > .right > p {
   font-size: 25px;
 }
 body #wrap > header > .friend > .right > p:first-child {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 body #wrap > header > .friend > .right > p:nth-child(2) > a:hover {
+  color: red;
+}
+body #wrap > header > .chatting {
+  padding-left: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  height: 80px;
+  line-height: 80px;
+}
+body #wrap > header > .chatting > h1 {
+  font-weight: 500;
+}
+body #wrap > header > .chatting > h2 {
+  text-indent: -110px;
+  color: #ccc;
+  font-size: 2em;
+  font-weight: 500;
+}
+body #wrap > header > .chatting > .right {
+  display: flex;
+  flex-flow: row nowrap;
+}
+body #wrap > header > .chatting > .right > p {
+  font-size: 25px;
+}
+body #wrap > header > .chatting > .right > p:first-child {
+  margin-right: 20px;
+}
+body #wrap > header > .chatting > .right > p:nth-child(2) {
+  margin-right: 20px;
+}
+body #wrap > header > .chatting > .right > p:last-child > a:hover {
   color: red;
 }
 body #wrap > section {
@@ -181,6 +214,11 @@ body #wrap > section > .favorites > ul > li {
   position: relative;
   margin-bottom: 20px;
 }
+body #wrap > section > .favorites > ul > li > a {
+  display: block;
+  width: 450px;
+  height: 60px;
+}
 body #wrap > section > .favorites > ul > li > a > img {
   width: 60px;
   height: 60px;
@@ -227,6 +265,67 @@ body #wrap > section > .favorites > ul > li > a > .one {
   background-color: red;
   border-radius: 10px;
 }
+body #wrap > section > .chatSection {
+  padding-top: -50px;
+}
+body #wrap > section > .chatSection > h2 {
+  text-indent: -9999px;
+}
+body #wrap > section > .chatSection > ul > li {
+  position: relative;
+  margin-bottom: 20px;
+}
+body #wrap > section > .chatSection > ul > li > a {
+  display: block;
+  width: 450px;
+  height: 60px;
+}
+body #wrap > section > .chatSection > ul > li > a > img {
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+body #wrap > section > .chatSection > ul > li > a > .name {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 500;
+}
+body #wrap > section > .chatSection > ul > li > a > .text {
+  position: absolute;
+  top: 35px;
+  left: 70px;
+  color: #888;
+  font-size: 14px;
+}
+body #wrap > section > .chatSection > ul > li > a > .date {
+  position: absolute;
+  top: 15px;
+  right: 0;
+  color: #888;
+}
+body #wrap > section > .chatSection > ul > li:hover {
+  background-color: lightgoldenrodyellow;
+}
+body #wrap > section > .chatSection > ul > li > a > .one {
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 10px;
+}
 body #wrap > footer {
   display: none;
 }
@@ -258,6 +357,7 @@ body #wrap > footer > nav > ol {
   font-size: 25px;
   line-height: 70px;
   background-color: #eee;
+  border-top: 1px solid #ccc;
 }
 body #wrap > footer > nav > ol > li > a {
   height: 70px;
