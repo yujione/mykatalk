@@ -314,7 +314,7 @@ body #wrap > section > .chatSection > ul > li:hover {
 body #wrap > section > .chatSection > ul > li > a > .one {
   position: absolute;
   right: 0;
-  bottom: 4px;
+  bottom: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
