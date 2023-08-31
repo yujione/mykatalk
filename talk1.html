@@ -1,51 +1,71 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <title>마이카톡</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    />
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<title>마이카톡</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+		/>
+	</head>
 
-  <body>
-    <div id="pc">
-      <div id="wrap">
-        <header>
-          <div class="top">
-            <ul>
-              <li><i class="fas fa-signal"></i></li>
-              <li>SKT</li>
-              <li><i class="fas fa-wifi"> </i></li>
+	<body>
+		<div id="pc">
+			<div id="wrap">
+				<header>
+					<div class="top">
+						<ul>
+							<li><i class="fas fa-signal"></i></li>
+							<li>SKT</li>
+							<li><i class="fas fa-wifi"> </i></li>
 
-              <li>오후 13:54</li>
+							<li>오후 13:54</li>
 
-              <li>70%</li>
-              <li><i class="fas fa-battery-three-quarters"> </i></li>
-            </ul>
-          </div>
-          <div class="friend">
-            <h1>
-              <a href="./index.html"
-                ><i class="fas fa-chevron-left"></i><span>하루</span></a
-              >
-            </h1>
-            <div class="right">
-              <p>
-                <a href="#"><i class="fas fa-search"></i></a>
-              </p>
-              <p>
-                <a href="./settings.html"><i class="fas fa-cog"></i></a>
-              </p>
-            </div>
-          </div>
-        </header>
-        <section></section>
-        <footer></footer>
-      </div>
-    </div>
-  </body>
+							<li>70%</li>
+							<li><i class="fas fa-battery-three-quarters"> </i></li>
+						</ul>
+					</div>
+					<div class="friend talkTop">
+						<h1>
+							<a href="./index.html"><i class="fas fa-chevron-left"></i><span>하루</span></a>
+						</h1>
+						<div class="right">
+							<p>
+								<a href="#"><i class="fas fa-search"></i></a>
+							</p>
+							<p>
+								<a href="#"><i class="fas fa-bars"></i></a>
+							</p>
+						</div>
+					</div>
+				</header>
+				<section class="talkSection">
+					<h2>채팅</h2>
+					<div>
+						<p class="day">2022년 11월 14일 월요일</p>
+						<p class="people">
+							<img src="./images/haru.jpg" alt="하루" /><span class="name">하루</span
+							><span class="say">심심해..ㅠ</span>
+						</p>
+						<p class="meSay">하루 산책갈까?😚</p>
+						<!-- <p>2022년 11월 14일 월요일</p>
+						<p>2022년 11월 14일 월요일</p> -->
+					</div>
+				</section>
+				<footer>
+					<div class="writeBox">
+						<p>
+							<span><i class="far fa-plus-square"></i></span>
+							<input type="text" placeholder="send message" onclick="off" />
+							<span><i class="far fa-smile"></i></span>
+							<span><i class="fas fa-microphone"></i></span>
+						</p>
+						<p><img src="./images/keyboard.png" alt="keyboard" /></p>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</body>
 </html>

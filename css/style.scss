@@ -20,7 +20,7 @@ body {
 			display: block;
 			width: 100%;
 			height: 100%;
-			// overflow-x: hidden;
+			// overflow: scroll;
 		}
 
 		&.IndexPc {
@@ -107,6 +107,30 @@ body {
 							}
 						}
 					}
+					&.talkTop {
+						// display: block;
+						padding-right: 5px;
+						font-size: 12px;
+
+						> h1 {
+							> a {
+								> span {
+									margin-left: 10px;
+								}
+								&:hover {
+									color: #ffda36;
+								}
+							}
+						}
+						> .right {
+							> p {
+								font-size: 22px;
+								&:nth-child(2) > a:hover {
+									color: #000;
+								}
+							}
+						}
+					} //end of .talkTop (talk1.html)
 				} //end of .friend
 
 				> .chatting {
@@ -564,6 +588,217 @@ body {
 						}
 					}
 				} //end of .settingList (settings.html)
+
+				&.talkSection {
+					width: 100vw;
+					height: 100vh;
+					margin-left: 0;
+					background-image: url(./../images/chatBg.png);
+					> h2 {
+						text-indent: -9999px;
+					}
+					div {
+						position: relative;
+						> p {
+							&.day {
+								position: absolute;
+								top: 25px;
+								left: 50%;
+								width: 180px;
+								height: 35px;
+								font-size: 14px;
+								line-height: 35px;
+								font-weight: 500;
+								text-align: center;
+								background-color: #fff;
+								transform: translate(-55%, 0);
+								border-radius: 50px;
+								box-shadow: 2px 2px 10px #a3a3a3;
+							}
+							&.day2 {
+								top: 410px;
+							}
+							&.people {
+								display: flex;
+								position: absolute;
+								top: 100px;
+								left: 25px;
+
+								> span {
+									position: absolute;
+									left: 60px;
+									&.name {
+										width: 50px;
+										font-size: 15px;
+									}
+									&.say {
+										top: 25px;
+										width: 100px;
+										height: 50px;
+										font-size: 18px;
+										font-weight: 380;
+										line-height: 50px;
+										text-align: center;
+										background-color: #fff;
+										border-radius: 13px;
+										box-shadow: 2px 2px 10px #d4d4d4;
+									}
+								}
+							}
+							&.people2 {
+								top: 130px;
+								left: 25px;
+								> span {
+									&.say {
+										width: 50px;
+									}
+								}
+							} // end of .people2(katalk2.html)
+							&.people3 {
+								top: 450px;
+								left: 25px;
+								> span {
+									&.say {
+										width: 220px;
+									}
+								}
+							} // end of .people2(katalk2.html)
+							&.people4 {
+								> span {
+									&.say {
+										width: 250px;
+									}
+								}
+							} // end of .people4(katalk3.html)
+							&.people5 {
+								> span {
+									&.name {
+										width: 70px;
+										font-size: 15px;
+									}
+									&.say {
+										top: 25px;
+										width: 50px;
+									}
+								}
+							} // end of .people5(katalk4.html)
+							&.people6 {
+								top: 250px;
+								left: 25px;
+								> span {
+									&.name {
+										width: 70px;
+										font-size: 15px;
+									}
+									&.say {
+										top: 25px;
+										width: 100px;
+									}
+								}
+							} // end of .people6(katalk4.html)
+							&.people7 {
+								> span {
+									&.emoticon {
+										top: 230px;
+										width: 100px;
+									}
+								}
+							} // end of .people7(katalk4.html)
+							&.people8 {
+								> span {
+									&.emoticon {
+										top: 330px;
+										width: 100px;
+									}
+								}
+							} // end of .people8(katalk4.html)
+							&.people9 {
+								> span {
+									&.emoticon {
+										top: 440px;
+										width: 100px;
+									}
+								}
+							} // end of .people8(katalk4.html)
+							&.people10 {
+								top: 660px;
+								> span {
+									&.name {
+										width: 70px;
+										font-size: 15px;
+									}
+									&.say {
+										top: 25px;
+										width: 220px;
+									}
+								}
+							} // end of .people8(katalk4.html)
+							> img {
+								display: block;
+								width: 45px;
+								height: 45px;
+								border-radius: 50%;
+							}
+							&.meSay {
+								position: absolute;
+								top: 200px;
+								right: 60px;
+								display: inline-block;
+								height: 50px;
+								padding: 0 20px;
+								font-size: 18px;
+								font-weight: 380;
+								line-height: 50px;
+								text-align: center;
+								background-color: #fde36e;
+								border-radius: 13px;
+								box-shadow: 2px 2px 10px #d4d4d4;
+							}
+							&.meSay2 {
+								top: 90px;
+							} // end of .meSay2(katalk2.html)
+							&.meSay3 {
+								top: 220px;
+							} // end of .meSay3(katalk2.html)
+							&.meSay4 {
+								top: 200px;
+								display: flex;
+								align-items: center;
+								height: 80px;
+								line-height: 30px;
+								text-align: left;
+							} // end of .meSay4(katalk3.html)
+							&.meSay5 {
+								top: 300px;
+							} // end of .meSay5(katalk3.html)
+							&.meSay6 {
+								top: 370px;
+							} // end of .meSay6(katalk3.html)
+							&.meSay7 {
+								top: 440px;
+							} // end of .meSay7(katalk3.html)
+							&.meSay8 {
+								top: 510px;
+							} // end of .meSay7(katalk3.html)
+							&.meSay9 {
+								top: 580px;
+							} // end of .meSay7(katalk3.html)
+							&.meSay10 {
+								top: 650px;
+							} // end of .meSay7(katalk3.html)
+
+							&.emoticon {
+								position: absolute;
+								top: 280px;
+								right: 60px;
+								> img {
+									width: 120px;
+									height: 120px;
+								}
+							} // end of .emoticon(katalk2.html)
+						} //end of p
+					} //end of div
+				} //end of .talkSection (talk1.html)
 			} //end of section
 
 			> footer {
@@ -630,6 +865,49 @@ body {
 						}
 					}
 				} //end of nav
+
+				> .writeBox {
+					height: 100px;
+					transition: all 0.5s ease-in-out;
+					&:hover {
+						height: 420px;
+					}
+					> p {
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-around;
+						align-items: center;
+						width: 100vw;
+						height: 60px;
+						font-size: 22px;
+						background-color: #fff;
+						border-top: 1px solid #ccc;
+
+						> span:nth-child(1) {
+							margin-left: -150px;
+						}
+						> span:nth-child(3) {
+							margin-right: -360px;
+						}
+						> span:nth-child(4) {
+							margin-right: -130px;
+						}
+						> input {
+							position: absolute;
+							top: 21px;
+							left: 70px;
+							padding-right: 150px;
+							border: none;
+							outline: none;
+						}
+
+						> img {
+							display: block;
+							margin-top: 300px;
+							width: 100%;
+						}
+					}
+				} //end of .writeBox (talk1.html)
 			} //end of footer
 		} //end of #wrap
 	} //end of #pc

@@ -96,6 +96,22 @@ body > #pc > #wrap > header > .friend > .right > p:first-child {
 body > #pc > #wrap > header > .friend > .right > p:nth-child(2) > a:hover {
   color: red;
 }
+body > #pc > #wrap > header > .friend.talkTop {
+  padding-right: 5px;
+  font-size: 12px;
+}
+body > #pc > #wrap > header > .friend.talkTop > h1 > a > span {
+  margin-left: 10px;
+}
+body > #pc > #wrap > header > .friend.talkTop > h1 > a:hover {
+  color: #ffda36;
+}
+body > #pc > #wrap > header > .friend.talkTop > .right > p {
+  font-size: 22px;
+}
+body > #pc > #wrap > header > .friend.talkTop > .right > p:nth-child(2) > a:hover {
+  color: #000;
+}
 body > #pc > #wrap > header > .chatting {
   padding-left: 20px;
   display: flex;
@@ -488,6 +504,184 @@ body > #pc > #wrap > section > .settingList > ul > li > a:hover {
 body > #pc > #wrap > section > .settingList > ul > li > a > i {
   margin: 0 20px;
 }
+body > #pc > #wrap > section.talkSection {
+  width: 100vw;
+  height: 100vh;
+  margin-left: 0;
+  background-image: url(./../images/chatBg.png);
+}
+body > #pc > #wrap > section.talkSection > h2 {
+  text-indent: -9999px;
+}
+body > #pc > #wrap > section.talkSection div {
+  position: relative;
+}
+body > #pc > #wrap > section.talkSection div > p.day {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 180px;
+  height: 35px;
+  font-size: 14px;
+  line-height: 35px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #fff;
+  transform: translate(-55%, 0);
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px #a3a3a3;
+}
+body > #pc > #wrap > section.talkSection div > p.day2 {
+  top: 410px;
+}
+body > #pc > #wrap > section.talkSection div > p.people {
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: 25px;
+}
+body > #pc > #wrap > section.talkSection div > p.people > span {
+  position: absolute;
+  left: 60px;
+}
+body > #pc > #wrap > section.talkSection div > p.people > span.name {
+  width: 50px;
+  font-size: 15px;
+}
+body > #pc > #wrap > section.talkSection div > p.people > span.say {
+  top: 25px;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 380;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 2px 2px 10px #d4d4d4;
+}
+body > #pc > #wrap > section.talkSection div > p.people2 {
+  top: 130px;
+  left: 25px;
+}
+body > #pc > #wrap > section.talkSection div > p.people2 > span.say {
+  width: 50px;
+}
+body > #pc > #wrap > section.talkSection div > p.people3 {
+  top: 450px;
+  left: 25px;
+}
+body > #pc > #wrap > section.talkSection div > p.people3 > span.say {
+  width: 220px;
+}
+body > #pc > #wrap > section.talkSection div > p.people4 > span.say {
+  width: 250px;
+}
+body > #pc > #wrap > section.talkSection div > p.people5 > span.name {
+  width: 70px;
+  font-size: 15px;
+}
+body > #pc > #wrap > section.talkSection div > p.people5 > span.say {
+  top: 25px;
+  width: 50px;
+}
+body > #pc > #wrap > section.talkSection div > p.people6 {
+  top: 250px;
+  left: 25px;
+}
+body > #pc > #wrap > section.talkSection div > p.people6 > span.name {
+  width: 70px;
+  font-size: 15px;
+}
+body > #pc > #wrap > section.talkSection div > p.people6 > span.say {
+  top: 25px;
+  width: 100px;
+}
+body > #pc > #wrap > section.talkSection div > p.people7 > span.emoticon {
+  top: 230px;
+  width: 100px;
+}
+body > #pc > #wrap > section.talkSection div > p.people8 > span.emoticon {
+  top: 330px;
+  width: 100px;
+}
+body > #pc > #wrap > section.talkSection div > p.people9 > span.emoticon {
+  top: 440px;
+  width: 100px;
+}
+body > #pc > #wrap > section.talkSection div > p.people10 {
+  top: 660px;
+}
+body > #pc > #wrap > section.talkSection div > p.people10 > span.name {
+  width: 70px;
+  font-size: 15px;
+}
+body > #pc > #wrap > section.talkSection div > p.people10 > span.say {
+  top: 25px;
+  width: 220px;
+}
+body > #pc > #wrap > section.talkSection div > p > img {
+  display: block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay {
+  position: absolute;
+  top: 200px;
+  right: 60px;
+  display: inline-block;
+  height: 50px;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: 380;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fde36e;
+  border-radius: 13px;
+  box-shadow: 2px 2px 10px #d4d4d4;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay2 {
+  top: 90px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay3 {
+  top: 220px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay4 {
+  top: 200px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  line-height: 30px;
+  text-align: left;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay5 {
+  top: 300px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay6 {
+  top: 370px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay7 {
+  top: 440px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay8 {
+  top: 510px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay9 {
+  top: 580px;
+}
+body > #pc > #wrap > section.talkSection div > p.meSay10 {
+  top: 650px;
+}
+body > #pc > #wrap > section.talkSection div > p.emoticon {
+  position: absolute;
+  top: 280px;
+  right: 60px;
+}
+body > #pc > #wrap > section.talkSection div > p.emoticon > img {
+  width: 120px;
+  height: 120px;
+}
 body > #pc > #wrap > footer {
   display: block;
   width: 100%;
@@ -545,4 +739,44 @@ body > #pc > #wrap > footer > nav > ol > li:nth-child(2) > a > span.one {
   background-color: red;
   border-radius: 10px;
   animation: anione 0.5s ease-in-out infinite alternate forwards;
+}
+body > #pc > #wrap > footer > .writeBox {
+  height: 100px;
+  transition: all 0.5s ease-in-out;
+}
+body > #pc > #wrap > footer > .writeBox:hover {
+  height: 420px;
+}
+body > #pc > #wrap > footer > .writeBox > p {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+  font-size: 22px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+body > #pc > #wrap > footer > .writeBox > p > span:nth-child(1) {
+  margin-left: -150px;
+}
+body > #pc > #wrap > footer > .writeBox > p > span:nth-child(3) {
+  margin-right: -360px;
+}
+body > #pc > #wrap > footer > .writeBox > p > span:nth-child(4) {
+  margin-right: -130px;
+}
+body > #pc > #wrap > footer > .writeBox > p > input {
+  position: absolute;
+  top: 21px;
+  left: 70px;
+  padding-right: 150px;
+  border: none;
+  outline: none;
+}
+body > #pc > #wrap > footer > .writeBox > p > img {
+  display: block;
+  margin-top: 300px;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
