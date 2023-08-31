@@ -2,7 +2,7 @@
 <html lang="ko">
 	<head>
 		<meta charset="UTF-8" />
-		<title>찾다</title>
+		<title>찾기</title>
 		<link rel="stylesheet" href="./css/style.css" />
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link
@@ -13,7 +13,7 @@
 	<body>
 		<div id="pc">
 			<div id="wrap">
-				<header>
+				<header class="find">
 					<div class="top">
 						<ul>
 							<li><i class="fas fa-signal"> </i></li>
@@ -34,40 +34,69 @@
 								<a href="#"><i class="fas fa-search"></i></a>
 							</p>
 							<p>
-								<a href=""><i class="fas fa-cog"></i></a>
+								<a href="./settings.html"><i class="fas fa-cog"></i></a>
 							</p>
 						</div>
-						<div>
-							<ul class="findlist">
-								<li><i class="fas fa-qrcode"></i>QR코드</li>
-								<li><i class="fas fa-address-card"></i>연락처로 추가</li>
-								<li><i class="fas fa-passport"></i>ID로 추가</li>
-								<li><i class="fas fa-user-plus"></i>추천친구</li>
-							</ul>
-						</div>
 					</div>
+
+					<ul class="findlist">
+						<li>
+							<a href="#"><i class="fas fa-qrcode"></i><span>QR코드</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-address-card"></i><span>연락처로 추가</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-passport"></i><span>ID로 추가</span></a>
+						</li>
+						<li>
+							<a href="#"><i class="fas fa-user-plus"></i><span>추천친구</span></a>
+						</li>
+					</ul>
 				</header>
+				<section>
+					<div class="findSection">
+						<h2>추천친구</h2>
+						<ul>
+							<li>
+								<a href="#">
+									<span class="user"><i class="fas fa-user"></i></span
+									><span class="text">Anonymous</span>
+									<span class="plus"><i class="fas fa-user-plus"></i></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="user"><i class="fas fa-user"></i></span
+									><span class="text">Anonymous</span>
+									<span class="plus"><i class="fas fa-user-plus"></i></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="user"><i class="fas fa-user"></i></span
+									><span class="text">Anonymous</span>
+									<span class="plus"><i class="fas fa-user-plus"></i></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
 				<footer>
 					<nav>
 						<ol>
 							<li>
-								<a href="https://yujione.github.io/mykatalk//index.html"
-									><i class="far fa-user"></i
-								></a>
+								<a href="./index.html"><i class="far fa-user"></i></a>
 							</li>
 							<li>
-								<a href="https://yujione.github.io/mykatalk//chatting.html"
-									><i class="fas fa-comment"></i
-								></a>
+								<a href="./chatting.html"><i class="fas fa-comment"></i></a>
 								<a href=""><span class="one">10</span></a>
 							</li>
 							<li>
-								<a href="https://yujione.github.io/mykatalk//find.html"
-									><i class="fas fa-search"></i
-								></a>
+								<a href="./find.html"><i class="fas fa-search"></i></a>
 							</li>
 							<li>
-								<a href=""><i class="fas fa-ellipsis-h"></i></a>
+								<a href="./more.html"><i class="fas fa-ellipsis-h"></i></a>
 							</li>
 						</ol>
 					</nav>

@@ -1,4 +1,4 @@
-$mobile: 'screen and (max-width:550px)';
+$mobile: 'screen and (max-width:565px)';
 
 body {
 	&:after {
@@ -23,9 +23,16 @@ body {
 			// overflow-x: hidden;
 		}
 
-		> #wrap {
-			width: 450px;
+		&.IndexPc {
 			height: 850px;
+		} //end of .IndexPc(index.html)
+
+		> #wrap {
+			width: 500px;
+			// overflow-y: hidden;
+			// overflow-x: auto;
+			// white-space:nowrap
+			// height: 800px;
 			> header {
 				display: block;
 				width: 100%;
@@ -100,15 +107,6 @@ body {
 							}
 						}
 					}
-
-					// > div {
-					// 	position: relative;
-					// 	> .findlist {
-					// 		position: absolute;
-					// 		top: 0;
-					// 		left: 0;
-					// 	}
-					// }
 				} //end of .friend
 
 				> .chatting {
@@ -146,7 +144,60 @@ body {
 						}
 					}
 				} //end of .chatting (chatting.html)
-			} //end header
+
+				&.find {
+					//   border: 1px solid #000;
+					display: flex;
+					flex-direction: column;
+
+					> .findlist {
+						display: flex;
+						flex-direction: row;
+						flex-wrap: nowrap;
+						justify-content: space-evenly;
+						border-bottom: 1px solid #ccc;
+
+						> li {
+							> a {
+								display: block;
+								width: 100px;
+								height: 70px;
+								padding-top: 10px;
+								padding-bottom: 20px;
+								text-align: center;
+
+								> i {
+									display: block;
+									font-size: 40px;
+								}
+								> span {
+									display: block;
+									margin-top: 10px;
+									text-align: center;
+								}
+							}
+						}
+					} //end of .findlist
+				} //end of .find (find.html)
+
+				> .settingh1 {
+					h1 {
+						font-size: 24px;
+						text-indent: -3px;
+						> a {
+							&:hover {
+								color: rgb(255, 221, 2);
+							}
+							> span {
+								margin-left: 10px;
+							}
+						}
+					}
+					> .right {
+						margin-right: -15px;
+					}
+				} //end of .settingh1 (setting.html)
+			} //end of header
 
 			> section {
 				display: block;
@@ -291,7 +342,7 @@ body {
 							}
 						} //end of li
 					} // end of ul
-				} //end of .favorites (index)
+				} //end of .favorites (index.html)
 
 				> .chatSection {
 					padding-top: -50px;
@@ -380,7 +431,139 @@ body {
 							}
 						} //end of li
 					} // end of ul
-				} //end of .chatSection (chatting)
+				} //end of .chatSection (chatting.html)
+
+				> .findSection {
+					> h2 {
+						margin-top: 30px;
+						font-size: 16px;
+						font-weight: 400;
+					}
+
+					> ul {
+						> li {
+							margin: 50px 0;
+							> a {
+								display: flex;
+								flex-flow: row nowrap;
+								justify-content: space-between;
+								align-items: center;
+								height: 50px;
+								// border: 1px solid #000;
+
+								> .user {
+									display: inline-block;
+									width: 40px;
+									height: 40px;
+									line-height: 35px;
+									font-size: 30px;
+									text-align: center;
+									border: 3px solid #000;
+									border-radius: 50%;
+								}
+
+								> .text {
+									font-size: 18px;
+									font-weight: 500;
+									text-indent: -180px;
+								}
+
+								> .plus {
+									font-size: 20px;
+								}
+
+								&:hover {
+									background-color: lightgoldenrodyellow;
+								}
+							}
+						}
+					} //end of ul
+				} //end of .findSection (find.html)
+
+				> .moreSection {
+					> ol {
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-evenly;
+						align-items: center;
+						margin-top: 30px;
+						// border-bottom: 1px solid #ccc;
+						> li {
+							margin: 0 40px;
+							> a {
+								display: block;
+								// height: 80px;
+								text-align: center;
+								> i {
+									font-size: 40px;
+								}
+								> span {
+									display: block;
+									margin-top: 15px;
+								}
+							}
+						}
+					}
+				} //end of .moreSection (more.html)
+
+				> .kakao {
+					margin-top: 30px;
+					border-top: 1px solid #ccc;
+
+					> h2 {
+						margin-top: 40px;
+						font-size: 16px;
+						font-weight: 400;
+					}
+					> ul {
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-evenly;
+						align-items: center;
+						margin-top: 30px;
+						> li {
+							margin: 0 40px;
+							> a {
+								display: block;
+								// height: 80px;
+								text-align: center;
+								> i {
+									width: 55px;
+									height: 55px;
+									color: #fff;
+									font-size: 40px;
+									line-height: 50px;
+									background-color: rgb(255, 221, 2);
+									border-radius: 8px;
+								}
+								> span {
+									display: block;
+									margin-top: 15px;
+								}
+							}
+						}
+					}
+				} //end of .kakao (more.html)
+
+				> .settingList {
+					> ul {
+						> li {
+							margin: 25px 0;
+							> a {
+								display: block;
+								height: 40px;
+								line-height: 40px;
+								font-size: 25px;
+								&:hover {
+									background-color: lightgoldenrodyellow;
+								}
+								> i {
+									margin: 0 20px;
+								}
+							}
+						}
+					}
+				} //end of .settingList (settings.html)
 			} //end of section
 
 			> footer {

@@ -9,7 +9,7 @@ body:after {
   background-color: #ff0;
   content: "브라우저의 가로폭을 550이하로 줄여주세요";
 }
-@media screen and (max-width:550px) {
+@media screen and (max-width:565px) {
   body:after {
     display: none;
   }
@@ -17,16 +17,18 @@ body:after {
 body > #pc {
   display: none;
 }
-@media screen and (max-width:550px) {
+@media screen and (max-width:565px) {
   body > #pc {
     display: block;
     width: 100%;
     height: 100%;
   }
 }
-body > #pc > #wrap {
-  width: 450px;
+body > #pc.IndexPc {
   height: 850px;
+}
+body > #pc > #wrap {
+  width: 500px;
 }
 body > #pc > #wrap > header {
   display: block;
@@ -126,6 +128,47 @@ body > #pc > #wrap > header > .chatting > .right > p:nth-child(2) {
 }
 body > #pc > #wrap > header > .chatting > .right > p:last-child > a:hover {
   color: red;
+}
+body > #pc > #wrap > header.find {
+  display: flex;
+  flex-direction: column;
+}
+body > #pc > #wrap > header.find > .findlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid #ccc;
+}
+body > #pc > #wrap > header.find > .findlist > li > a {
+  display: block;
+  width: 100px;
+  height: 70px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+body > #pc > #wrap > header.find > .findlist > li > a > i {
+  display: block;
+  font-size: 40px;
+}
+body > #pc > #wrap > header.find > .findlist > li > a > span {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+}
+body > #pc > #wrap > header > .settingh1 h1 {
+  font-size: 24px;
+  text-indent: -3px;
+}
+body > #pc > #wrap > header > .settingh1 h1 > a:hover {
+  color: rgb(255, 221, 2);
+}
+body > #pc > #wrap > header > .settingh1 h1 > a > span {
+  margin-left: 10px;
+}
+body > #pc > #wrap > header > .settingh1 > .right {
+  margin-right: -15px;
 }
 body > #pc > #wrap > section {
   display: block;
@@ -336,6 +379,114 @@ body > #pc > #wrap > section > .chatSection > ul > li:nth-child(2) > a > .img im
   border-radius: 10px;
   width: 28px;
   height: 28px;
+}
+body > #pc > #wrap > section > .findSection > h2 {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+}
+body > #pc > #wrap > section > .findSection > ul > li {
+  margin: 50px 0;
+}
+body > #pc > #wrap > section > .findSection > ul > li > a {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+body > #pc > #wrap > section > .findSection > ul > li > a > .user {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid #000;
+  border-radius: 50%;
+}
+body > #pc > #wrap > section > .findSection > ul > li > a > .text {
+  font-size: 18px;
+  font-weight: 500;
+  text-indent: -180px;
+}
+body > #pc > #wrap > section > .findSection > ul > li > a > .plus {
+  font-size: 20px;
+}
+body > #pc > #wrap > section > .findSection > ul > li > a:hover {
+  background-color: lightgoldenrodyellow;
+}
+body > #pc > #wrap > section > .moreSection > ol {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+body > #pc > #wrap > section > .moreSection > ol > li {
+  margin: 0 40px;
+}
+body > #pc > #wrap > section > .moreSection > ol > li > a {
+  display: block;
+  text-align: center;
+}
+body > #pc > #wrap > section > .moreSection > ol > li > a > i {
+  font-size: 40px;
+}
+body > #pc > #wrap > section > .moreSection > ol > li > a > span {
+  display: block;
+  margin-top: 15px;
+}
+body > #pc > #wrap > section > .kakao {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+}
+body > #pc > #wrap > section > .kakao > h2 {
+  margin-top: 40px;
+  font-size: 16px;
+  font-weight: 400;
+}
+body > #pc > #wrap > section > .kakao > ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+body > #pc > #wrap > section > .kakao > ul > li {
+  margin: 0 40px;
+}
+body > #pc > #wrap > section > .kakao > ul > li > a {
+  display: block;
+  text-align: center;
+}
+body > #pc > #wrap > section > .kakao > ul > li > a > i {
+  width: 55px;
+  height: 55px;
+  color: #fff;
+  font-size: 40px;
+  line-height: 50px;
+  background-color: rgb(255, 221, 2);
+  border-radius: 8px;
+}
+body > #pc > #wrap > section > .kakao > ul > li > a > span {
+  display: block;
+  margin-top: 15px;
+}
+body > #pc > #wrap > section > .settingList > ul > li {
+  margin: 25px 0;
+}
+body > #pc > #wrap > section > .settingList > ul > li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 25px;
+}
+body > #pc > #wrap > section > .settingList > ul > li > a:hover {
+  background-color: lightgoldenrodyellow;
+}
+body > #pc > #wrap > section > .settingList > ul > li > a > i {
+  margin: 0 20px;
 }
 body > #pc > #wrap > footer {
   display: block;
