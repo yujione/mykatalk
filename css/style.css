@@ -9,7 +9,7 @@ body:after {
   background-color: #ff0;
   content: "브라우저의 가로폭을 550이하로 줄여주세요";
 }
-@media screen and (max-width:565px) {
+@media screen and (max-width:550px) {
   body:after {
     display: none;
   }
@@ -17,7 +17,7 @@ body:after {
 body > #pc {
   display: none;
 }
-@media screen and (max-width:565px) {
+@media screen and (max-width:550px) {
   body > #pc {
     display: block;
     width: 100%;
@@ -508,7 +508,7 @@ body > #pc > #wrap > section.talkSection {
   width: 100vw;
   height: 100vh;
   margin-left: 0;
-  background-image: url(./../images/chatBg.png);
+  background-color: #bacee0;
 }
 body > #pc > #wrap > section.talkSection > h2 {
   text-indent: -9999px;
@@ -558,7 +558,7 @@ body > #pc > #wrap > section.talkSection div > p.people > span.say {
   text-align: center;
   background-color: #fff;
   border-radius: 13px;
-  box-shadow: 2px 2px 10px #d4d4d4;
+  box-shadow: 2px 2px 10px #b1b1b1;
 }
 body > #pc > #wrap > section.talkSection div > p.people2 {
   top: 130px;
@@ -639,7 +639,7 @@ body > #pc > #wrap > section.talkSection div > p.meSay {
   text-align: center;
   background-color: #fde36e;
   border-radius: 13px;
-  box-shadow: 2px 2px 10px #d4d4d4;
+  box-shadow: 2px 2px 10px #b1b1b1;
 }
 body > #pc > #wrap > section.talkSection div > p.meSay2 {
   top: 90px;
