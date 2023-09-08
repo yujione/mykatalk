@@ -20,7 +20,6 @@ body {
 			display: block;
 			width: 100%;
 			height: 100%;
-			// overflow: scroll;
 		}
 
 		&.IndexPc {
@@ -28,11 +27,6 @@ body {
 		} //end of .IndexPc(index.html)
 
 		> #wrap {
-			width: 500px;
-			// overflow-y: hidden;
-			// overflow-x: auto;
-			// white-space:nowrap
-			// height: 800px;
 			> header {
 				display: block;
 				width: 100%;
@@ -70,12 +64,12 @@ body {
 							}
 							&:nth-child(5) {
 								position: absolute;
-								right: 23px;
+								right: 45px;
 								top: 0;
 							}
 							&:nth-child(6) {
 								position: absolute;
-								right: 0;
+								right: 20px;
 								top: 0;
 							}
 						}
@@ -102,8 +96,11 @@ body {
 							&:first-child {
 								margin-right: 20px;
 							}
-							&:nth-child(2) > a:hover {
-								color: red;
+							&:nth-child(2) {
+								margin-right: 20px;
+								> a:hover {
+									color: red;
+								}
 							}
 						}
 					}
@@ -158,13 +155,16 @@ body {
 							font-size: 25px;
 
 							&:first-child {
-								margin-right: 20px;
+								margin-right: 25px;
 							}
 							&:nth-child(2) {
 								margin-right: 20px;
 							}
-							&:last-child > a:hover {
-								color: red;
+							&:last-child {
+								margin-right: 20px;
+								> a:hover {
+									color: red;
+								}
 							}
 						}
 					}
@@ -343,7 +343,7 @@ body {
 								> .date {
 									position: absolute;
 									top: 15px;
-									right: 0;
+									right: 30px;
 									color: #888;
 								}
 							}
@@ -352,7 +352,7 @@ body {
 							}
 							& > a > .one {
 								position: absolute;
-								right: 0;
+								right: 33px;
 								bottom: 4px;
 								display: flex;
 								align-items: center;
@@ -411,7 +411,7 @@ body {
 								> .date {
 									position: absolute;
 									top: 15px;
-									right: 0;
+									right: 30px;
 									color: #888;
 								}
 							}
@@ -420,7 +420,7 @@ body {
 							}
 							& > a > .one {
 								position: absolute;
-								right: 0;
+								right: 33px;
 								bottom: 6px;
 								display: flex;
 								align-items: center;
@@ -494,6 +494,7 @@ body {
 								}
 
 								> .plus {
+									margin-right: 33px;
 									font-size: 20px;
 								}
 
@@ -889,7 +890,7 @@ body {
 							margin-left: -150px;
 						}
 						> span:nth-child(3) {
-							margin-right: -360px;
+							margin-right: -330px;
 						}
 						> span:nth-child(4) {
 							margin-right: -130px;
