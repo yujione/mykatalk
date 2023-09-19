@@ -219,7 +219,7 @@ body {
 						}
 					}
 					> .right {
-						margin-right: -15px;
+						margin-right: 8px;
 					}
 				} //end of .settingh1 (setting.html)
 			} //end of header
@@ -602,6 +602,11 @@ body {
 					}
 					div {
 						position: relative;
+
+						&.kaonKT {
+							height: 1000px;
+							background-color: #bacee0;
+						}
 						> p {
 							&.day {
 								position: absolute;

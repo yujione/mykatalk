@@ -187,7 +187,7 @@ body > #pc > #wrap > header > .settingh1 h1 > a > span {
   margin-left: 10px;
 }
 body > #pc > #wrap > header > .settingh1 > .right {
-  margin-right: -15px;
+  margin-right: 8px;
 }
 body > #pc > #wrap > section {
   display: block;
@@ -519,6 +519,10 @@ body > #pc > #wrap > section.talkSection > h2 {
 }
 body > #pc > #wrap > section.talkSection div {
   position: relative;
+}
+body > #pc > #wrap > section.talkSection div.kaonKT {
+  height: 1000px;
+  background-color: #bacee0;
 }
 body > #pc > #wrap > section.talkSection div > p.day {
   position: absolute;
